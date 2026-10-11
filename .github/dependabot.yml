@@ -4,3 +4,10 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "nix"
+    cooldown:
+      exclude:
+        - "nixpkgs" # Waiting for Hydra is enough of a cooldown
+    directory: "/"
+    schedule:
+      interval: "weekly"
